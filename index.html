@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown Timer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <header>
+      <a href="../" class="back-link">← zurück</a>
+      <div class="eyebrow">Miniprojekt</div>
+      <h1>Countdown<em>Timer</em></h1>
+      <p class="subtitle">⏳ Wähle ein Datum aus und schau zu wie die Zeit bis zu deinem großen Moment verrinnt!</p>
+    </header>
+
+    <div class="card">
+      <input type="date" id="targetDate">
+      <button id="startBtn">Starten →</button>
+    </div>
+
+    <div class="result" id="result">
+      <div class="units">
+        <div class="unit">
+          <span class="num" id="days">00</span>
+          <span class="lbl">Tage</span>
+        </div>
+        <div class="dot">:</div>
+        <div class="unit">
+          <span class="num" id="hours">00</span>
+          <span class="lbl">Stunden</span>
+        </div>
+        <div class="dot">:</div>
+        <div class="unit">
+          <span class="num" id="minutes">00</span>
+          <span class="lbl">Minuten</span>
+        </div>
+        <div class="dot">:</div>
+        <div class="unit">
+          <span class="num" id="seconds">00</span>
+          <span class="lbl">Sekunden</span>
+        </div>
+      </div>
+      <div class="expired" id="expired">🎉 Der Tag ist da!</div>
+      <button class="reset-btn" id="resetBtn">Neu starten</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
